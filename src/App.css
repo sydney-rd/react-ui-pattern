@@ -42,11 +42,16 @@
     linear-gradient(#fff 0 0)  no-repeat
       50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
   height: 5rem;
-  width: 5rem;
+  width: 6rem;
 }
 
-.test {
-  background-color: white;
-  width: 13rem;
-  height: 13rem;
+.search-bar {
+  display: grid;
+  padding-top: 5rem;
+}
+
+.stamp-flag {
+  height: 4rem;
+  width: 6rem;
+  padding-top: .5rem;
 }

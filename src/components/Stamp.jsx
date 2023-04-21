@@ -8,9 +8,10 @@ function Stamp({ country, onClick }) {
         <div className="stamp-container" onClick={onClick}>
 
             <div className="stamp">
-                {country.name.common} 
-            </div>
+                <img className="stamp-flag" src={country.flags.png} alt={country.name.common} />
+                
 
+            </div>
         </div>
     )
 }

@@ -23,11 +23,12 @@ function Home() {
             results.length = 15
         }
         setCountries(results)
+        setSearch("")
     }
 
     useEffect(() => {
         getCountries();
-    }, [search])
+    }, [])
 
     function modalPopUp(country) {
         console.log(country)
@@ -40,15 +41,17 @@ function Home() {
         }
     }   
 
-    function handleInputChange(event) {
-        setSearch(event.target.value)
+    // handle input change for searching regions
+    function handleInputChange() {
+        getCountries()
     }
 
     // console.log(countries); // console logs oceanic countries
     return (
         <div className="home-container">
             <div>
-                <input type="text" onChange={handleInputChange} />
+                <input className="search-bar" type="text" onChange={(e) => setSearch(e.target.value)} value={search}/>
+                <button onClick={handleInputChange}>Click</button>
             </div>
             {toggle && <Modal country={countryModal}/>} 
             {countries.map((country, idx) => {
@@ -61,8 +64,6 @@ function Home() {
                 
             })}
         </div>
-        
-        
     )
 }
 
