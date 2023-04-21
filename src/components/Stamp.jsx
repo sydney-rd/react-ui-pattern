@@ -12,7 +12,6 @@ function Stamp({ country, onClick }) {
             </div>
 
         </div>
-
     )
 }
 

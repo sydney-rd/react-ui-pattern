@@ -3,20 +3,30 @@
   background-size: cover;
   height: 100vh;
   width: 100vw;
-}
-
-.stamp-container {
   margin: 0;
   padding-top: 30px;
   padding-right: 30px;
   display: grid;
-  grid-template-columns: repeat(4, max-content); /* two columns with equal width */
+  grid-template-columns: repeat(5, max-content); /* two columns with equal width */
   grid-auto-rows: max-content; /* adjust row height automatically based on content */
   grid-gap: 30px;
   justify-items: center; /* center items horizontally */
   align-content: start; /* align items to the top of the container vertically */
   justify-content: flex-end;
 }
+/* 
+.stamp-container {
+  margin: 0;
+  padding-top: 30px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, max-content); 
+  grid-auto-rows: max-content; 
+  grid-gap: 30px;
+  justify-items: center; 
+  align-content: start; 
+  justify-content: flex-end;
+} */
 
 .stamp {
   --r: 10px; /* control the radius of the circles */
@@ -27,8 +37,8 @@
       calc(-1.5*var(--r)) calc(-1.5*var(--r)) /calc(3*var(--r)) calc(3*var(--r)),
     linear-gradient(#fff 0 0)  no-repeat
       50%/calc(100% - 3*var(--r)) calc(100% - 3*var(--r));
-  height: 125px;
-  width: 125px;
+  height: 5rem;
+  width: 5rem;
 }
 
 .test {
