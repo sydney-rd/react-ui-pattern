@@ -30,3 +30,9 @@
   height: 125px;
   width: 125px;
 }
+
+.test {
+  background-color: white;
+  width: 13rem;
+  height: 13rem;
+}
