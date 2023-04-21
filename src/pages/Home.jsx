@@ -7,13 +7,12 @@ import Modal from "../components/Modal";
 // fetch request that happens everytime the homepage is loaded
 function Home() {
     const [countries, setCountries] = useState([])
-    const [search, setSearch] = useState("oceania") // name of region
+    const [search, setSearch] = useState("oceania") // name of region that starts with useeffect
     const [countryModal, setCountryModal] = useState({})
     const [toggle, setToggle] = useState(false)
 
     const getCountries = async () => {
         const response = await axios.get(
-            // "https://restcountries.com/v3.1/region/asia"
             `https://restcountries.com/v3.1/region/${search}`
         )
         let limit = 15 
@@ -49,8 +48,8 @@ function Home() {
     // console.log(countries); // console logs oceanic countries
     return (
         <div className="home-container">
-            <div>
-                <input className="search-bar" type="text" onChange={(e) => setSearch(e.target.value)} value={search}/>
+            <div className="search-bar-container">
+            <input className="search-bar" type="text" onChange={(e) => setSearch(e.target.value)} value={search}/>
                 <button onClick={handleInputChange}>Click</button>
             </div>
             {toggle && <Modal country={countryModal}/>} 
@@ -60,8 +59,8 @@ function Home() {
                     country={country} 
                     key={idx} 
                     onClick={() => modalPopUp(country)} />
-                ) // returns # of stamps
-                
+                    ) // returns # of stamps
+                    
             })}
         </div>
     )

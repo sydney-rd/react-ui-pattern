@@ -22,11 +22,10 @@
   left: 50%; 
   transform: translate(-50%, -50%);
   height: 33rem;
-  z-index: 40;
   width: 30rem;
   filter: drop-shadow(5px 5px 10px black);
-  font-size: 20px;
-  padding-top: 50px;
+  font-size: 1.3rem;
+  padding-top: 5rem;
   font-family: 'Bradley Hand', sans-serif;
   z-index: 100;
   padding-left: 10px;
@@ -47,11 +46,14 @@
 
 .search-bar {
   display: grid;
-  padding-top: 5rem;
 }
+
+/* .search-bar-container {
+} */
 
 .stamp-flag {
   height: 4rem;
   width: 6rem;
   padding-top: .5rem;
 }
+
