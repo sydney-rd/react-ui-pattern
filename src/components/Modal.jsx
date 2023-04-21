@@ -5,7 +5,7 @@ function Modal( {country} ) {
     
     return(
 
-        <div className = "test">
+        <div className = "modal">
             {name()}
         </div>
     )
