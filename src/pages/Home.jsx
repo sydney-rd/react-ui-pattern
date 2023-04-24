@@ -40,6 +40,10 @@ function Home() {
         }
     }   
 
+    function modalExit(country) {
+        
+    }
+
     // handle input change for searching regions
     function handleInputChange() {
         getCountries()
@@ -47,23 +51,30 @@ function Home() {
 
     // console.log(countries); // console logs oceanic countries
     return (
-        <div className="home-container">
-            <div className="search-bar-container">
-            <input className="search-bar" type="text" onChange={(e) => setSearch(e.target.value)} value={search}/>
-                <button onClick={handleInputChange}>Click</button>
-            </div>
+        <div>
+          <div className="search-bar-container">
+            <input 
+            className="search-bar" 
+            type="text" 
+            placeholder="region of the world"
+            onChange={(e) => setSearch(e.target.value)} 
+            value={search}/>
+            <button onClick={handleInputChange}>Click</button>
+          </div>
+          <div className="home-container">
             {toggle && <Modal country={countryModal}/>} 
             {countries.map((country, idx) => {
-                return (
-                    <Stamp 
-                    country={country} 
-                    key={idx} 
-                    onClick={() => modalPopUp(country)} />
-                    ) // returns # of stamps
-                    
+              return (
+                <Stamp 
+                  country={country} 
+                  key={idx} 
+                  onClick={() => modalPopUp(country)} 
+                />
+              )
             })}
+          </div>
         </div>
-    )
-}
+      )
+}      
 
 export default Home;

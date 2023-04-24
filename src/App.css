@@ -44,16 +44,20 @@
   width: 6rem;
 }
 
-.search-bar {
-  display: grid;
+.search-bar-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
 }
-
-/* .search-bar-container {
-} */
-
+  
 .stamp-flag {
   height: 4rem;
   width: 6rem;
   padding-top: .5rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
