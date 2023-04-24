@@ -1,9 +1,12 @@
 # React-UI-Pattern
 
-This project is a web application that allows users to explore different country information such as their name, flag, capital, population, and region. 
+## Description
 
-You are able to select the following regions to retrieve the first, random 15 countries from that region within the search box.
+This project is a web application that allows users to explore different country information such as their name, flag, capital, population, and region. This project is deployed on [Netlify](https://react-country-project.netlify.app/).
 
+### Features
+
+Filter by region using the search bar
 * Oceania 
 * South America
 * North America
@@ -12,10 +15,19 @@ You are able to select the following regions to retrieve the first, random 15 co
 * Europe
 * Asia
 
+Once you click a flag, you can exit that modal pop-up by clicking on another flag.
+
+## Installation
+
+If you'd like to install this project, follow these steps:
+
+1. Clone this repository
+2. Install dependencies by running ```npm install```
+3. Start server by running ```npm start```
+
 ## Credit
 
 [REST Countries API](https://restcountries.com/)
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app)
 
