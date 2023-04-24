@@ -1,8 +1,10 @@
-# React-UI-Pattern
+# React-UI-Pattern 
 
-## Description
+## Description  🌎
 
-This project is a web application that allows users to explore different country information such as their name, flag, capital, population, and region. This project is deployed on [Netlify](https://react-country-project.netlify.app/).
+This project is a web application that allows users to explore different country information such as their name, flag, capital, population, and region. As a geography lover, this was a fun refresher of all these facts! 
+
+This project is deployed on [Netlify](https://react-country-project.netlify.app/).
 
 ### Features
 
