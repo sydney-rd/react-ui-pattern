@@ -17,7 +17,7 @@ Filter by region using the search bar
 * Europe
 * Asia
 
-Once you click a flag, you can exit that modal pop-up by clicking on another flag.
+Click a flag to learn fun facts!
 
 ## Installation
 
