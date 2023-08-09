@@ -1,6 +1,6 @@
 function Stamp({ country, onClick }) {
   return (
-    <div className="stamp-container" onClick={onClick}>
+    <div onClick={onClick}>
       <div className="stamp">
         <img
           className="stamp-flag"
