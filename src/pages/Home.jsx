@@ -6,7 +6,7 @@ import Modal from "../components/Modal";
 // fetch request that happens everytime the homepage is loaded
 function Home() {
   const [countries, setCountries] = useState([]);
-  const [search, setSearch] = useState("oceania"); // name of region that starts with useeffect
+  const [search, setSearch] = useState("oceania"); // name of region that starts with useffect
   const [countryModal, setCountryModal] = useState({});
   const [toggle, setToggle] = useState(false);
 
@@ -46,7 +46,6 @@ function Home() {
     getCountries();
   }
 
-  // console.log(countries); // console logs oceanic countries
   return (
     <div>
       <div className="search-bar-container">
@@ -57,7 +56,7 @@ function Home() {
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
-        <button onClick={handleInputChange}>Click</button>
+        <button onClick={handleInputChange}>Explore</button>
       </div>
       <div className="home-container">
         {toggle && <Modal country={countryModal} />}
