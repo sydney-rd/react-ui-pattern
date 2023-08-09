@@ -46,7 +46,6 @@ function Home() {
     getCountries();
   }
 
-  // console.log(countries); // console logs oceanic countries
   return (
     <div>
       <div className="search-bar-container">
@@ -57,7 +56,7 @@ function Home() {
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
-        <button onClick={handleInputChange}>Click</button>
+        <button onClick={handleInputChange}>Explore</button>
       </div>
       <div className="home-container">
         {toggle && <Modal country={countryModal} />}
