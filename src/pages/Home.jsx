@@ -17,7 +17,7 @@ function Home() {
     let results = response.data;
 
     if (results.length > limit) {
-      results.length = 18;
+      results.length = 15;
     }
     setCountries(results);
     setSearch("");
@@ -45,6 +45,7 @@ function Home() {
     <div>
       <div className="search-bar-container">
         Where are we going in the world? <br />
+        <br />
         <input
           className="search-bar"
           type="text"

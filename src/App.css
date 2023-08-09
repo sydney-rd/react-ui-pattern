@@ -9,10 +9,9 @@ body {
   width: 100vw;
 }
 
-
 .stamp-container {
   display: grid;
-  grid-template-columns: repeat(6, max-content);
+  grid-template-columns: repeat(5, max-content);
   grid-auto-rows: max-content;
   grid-gap: 1.4rem;
   justify-items: center;
@@ -92,4 +91,48 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .home-container {
+    background: url("assets/envelope.avif");
+    background-size: 100% 100%;
+  }
+
+  .stamp {
+    --r: 8px;
+    height: 3rem;
+    width: 4rem;
+  }
+
+  .stamp-flag {
+    height: 2rem;
+    width: 4rem;
+  }
+
+  .stamp-container {
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: .8rem;
+    padding-right: 2rem;
+  }
+
+  .search-bar-container {
+    font-family: 'Bradley Hand', sans-serif;
+    font-size: .8rem;
+    top: 85%;
+  }
+
+  .search-bar {
+    font-size: .8rem;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+
+  .send-btn {
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: .8rem;
+  }
+
 }
