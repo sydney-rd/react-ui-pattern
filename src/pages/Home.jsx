@@ -3,10 +3,9 @@ import axios from "axios";
 import Stamp from "../components/Stamp";
 import Modal from "../components/Modal";
 
-// fetch request that happens everytime the homepage is loaded
 function Home() {
   const [countries, setCountries] = useState([]);
-  const [search, setSearch] = useState("oceania"); // name of region that starts with useffect
+  const [search, setSearch] = useState("oceania");
   const [countryModal, setCountryModal] = useState({});
   const [toggle, setToggle] = useState(false);
 
@@ -29,7 +28,6 @@ function Home() {
   }, []);
 
   function modalPopUp(country) {
-    console.log(country);
     if (toggle) {
       setToggle(false);
       setCountryModal({});
@@ -39,9 +37,6 @@ function Home() {
     }
   }
 
-  function modalExit(country) {}
-
-  // handle input change for searching regions
   function handleInputChange() {
     getCountries();
   }
@@ -59,7 +54,9 @@ function Home() {
         <button onClick={handleInputChange}>Explore</button>
       </div>
       <div className="home-container">
-        {toggle && <Modal country={countryModal} />}
+        {toggle && (
+          <Modal country={countryModal} onClose={() => modalPopUp({})} />
+        )}
         <div className="stamp-container">
           {countries.map((country, idx) => {
             return (
