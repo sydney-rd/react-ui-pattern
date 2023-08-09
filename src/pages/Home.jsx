@@ -60,15 +60,17 @@ function Home() {
       </div>
       <div className="home-container">
         {toggle && <Modal country={countryModal} />}
-        {countries.map((country, idx) => {
-          return (
-            <Stamp
-              country={country}
-              key={idx}
-              onClick={() => modalPopUp(country)}
-            />
-          );
-        })}
+        <div className="stamp-container">
+          {countries.map((country, idx) => {
+            return (
+              <Stamp
+                country={country}
+                key={idx}
+                onClick={() => modalPopUp(country)}
+              />
+            );
+          })}
+        </div>
       </div>
     </div>
   );

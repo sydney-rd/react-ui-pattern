@@ -3,17 +3,21 @@ body {
 }
 
 .home-container {
-  background: url("https://img.freepik.com/premium-photo/old-post-striped-envelope-background-with-copy-space-mail-letter-with-stripped-vintage_113767-1350.jpg?w=2000");
+  background: url("assets/envelope.avif");
   background-size: cover;
   height: 100vh;
   width: 100vw;
+}
+
+
+.stamp-container {
   display: grid;
-  grid-template-columns: repeat(5,
-      max-content);
+  grid-template-columns: repeat(5, max-content);
   grid-auto-rows: max-content;
-  grid-gap: 1.2rem;
+  grid-gap: 1.4rem;
   justify-items: center;
   justify-content: flex-end;
+  padding: 3.5rem;
 }
 
 .modal {
