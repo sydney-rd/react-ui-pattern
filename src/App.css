@@ -18,6 +18,10 @@
   justify-content: flex-end;
 }
 
+.stamp-container {
+  padding-top: "10rem"
+}
+
 .modal {
   background-image: url("assets/blank.png");
   position: fixed;
