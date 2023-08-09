@@ -17,7 +17,7 @@ function Home() {
     let results = response.data;
 
     if (results.length > limit) {
-      results.length = 15;
+      results.length = 18;
     }
     setCountries(results);
     setSearch("");
@@ -44,14 +44,18 @@ function Home() {
   return (
     <div>
       <div className="search-bar-container">
+        Where are we going in the world? <br />
         <input
           className="search-bar"
           type="text"
-          placeholder="region of the world"
+          placeholder="enter a region"
           onChange={(e) => setSearch(e.target.value)}
           value={search}
         />
-        <button onClick={handleInputChange}>Explore</button>
+        <br />
+        <button className="send-btn" onClick={handleInputChange}>
+          Explore ✉️
+        </button>
       </div>
       <div className="home-container">
         {toggle && (

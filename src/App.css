@@ -12,7 +12,7 @@ body {
 
 .stamp-container {
   display: grid;
-  grid-template-columns: repeat(5, max-content);
+  grid-template-columns: repeat(6, max-content);
   grid-auto-rows: max-content;
   grid-gap: 1.4rem;
   justify-items: center;
@@ -26,8 +26,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 33rem;
-  width: 30rem;
+  height: 30rem;
+  width: 27rem;
   filter: drop-shadow(5px 5px 10px black);
   font-size: 1.3rem;
   padding-top: 5rem;
@@ -47,11 +47,8 @@ body {
   color: black
 }
 
-
-
 .stamp {
   --r: 10px;
-  /* control the radius of the circles */
   padding: calc(2 * var(--r));
   filter: grayscale(0.4) drop-shadow(0 0 1px #0005) drop-shadow(0 0 1px #0005);
   background: radial-gradient(var(--r), #0000 98%, #fff) round calc(-1.5 * var(--r)) calc(-1.5 * var(--r)) / calc(3 * var(--r)) calc(3 * var(--r)),
@@ -62,9 +59,28 @@ body {
 
 .search-bar-container {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  font-family: 'Bradley Hand', sans-serif;
+  font-size: 1.5rem;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
+  text-align: center;
+}
+
+.search-bar {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.send-btn {
+  border-radius: 10px;
+  border: 1px solid black;
+  font-size: 1rem;
 }
 
 .stamp-flag {
