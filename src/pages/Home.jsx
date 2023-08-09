@@ -6,7 +6,7 @@ import Modal from "../components/Modal";
 // fetch request that happens everytime the homepage is loaded
 function Home() {
   const [countries, setCountries] = useState([]);
-  const [search, setSearch] = useState("oceania"); // name of region that starts with useeffect
+  const [search, setSearch] = useState("oceania"); // name of region that starts with useffect
   const [countryModal, setCountryModal] = useState({});
   const [toggle, setToggle] = useState(false);
 
