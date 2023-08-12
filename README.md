@@ -1,6 +1,6 @@
 # React-UI-Pattern 
 
-## Description  🌎
+## About  🌎
 
 This project is a web application that allows users to explore different country information such as their name, flag, capital, population, and region. As a geography lover, this was a fun refresher of all these facts! 
 
